@@ -1,5 +1,14 @@
 ## A Simple Tour Project
 
+## Fetching from 'https://course-api.com/react-tours-project'
+
+This was throwing up a CORS error and since i do not not want to disable CORS, i created an alternative source for the tours: using JSON Server:
+
+1. Create a JSON db file, db.json, with the content of the original tours api
+2. Start the json-server: "json-server db.json --port 5000" (must be in the directory of the db.json file. Use bash ipo powershell as powershell will require authorizing the script and won't run)
+3. change the url to your local json server ('http://localhost:5000/tours').
+   Note: if you want to maintain the original tours api then you can download and enable a CORS-Allow estensions like Allow CORS: Access-Control-Allow-Origin.
+
 ## Figma URL
 
 [Tours](https://www.figma.com/file/OnLoM3AzBFaHzSc2iolJS0/Tours?node-id=0%3A1&t=wiRXOlTLN5ehekYI-1)
